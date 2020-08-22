@@ -7,9 +7,10 @@
     </head>
     <body>
         <!-- three columns, navigation, email list, email detail -->
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-2 navbar navbar-dark bg-dark">                    
+                <!-- Column 1: Nav -->
+                <div class="col-12 col-lg-2 navbar navbar-dark bg-dark order-1">                    
                     <p class="welcome">
                         icon here - Welcome, Brock!
                     </p>
@@ -37,17 +38,57 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-3 email-list">
-                    <p>Search bar here</p>
-                    <p>Three email cards, active one looks like a card, others look like part of background</p>
+
+                <!-- Column 2: Email List -->
+                <div class="col-12 col-lg-4 email-list order-lg-2 order-3">
+                    <p><input type="text" placeholder="Search for emails"></p>
+                    <!-- <p>Three email cards, active one looks like a card, others look like part of background</p> -->
+                    <div class="row email-card">
+                        <div class="subject">LinkedIn</div>
+                        <div class="date-time">02:45pm</div>
+                        <div class="col-12 first-line">You have a new connection request.</div>
+                    </div>
+                    <div class="row email-card hover">
+                        <div class="subject">Michael Scott Daily Quotes</div>
+                        <div class="date-time">July 3, 2020</div>
+                        <div class="col-12 first-line">"Friends joke with one another. 'Hey you're poor.' 'Hey, y...</div>
+                    </div>
+                    <div class="row email-card">
+                        <div class="subject">LaMar Software</div>
+                        <div class="date-time">Feb 9, 2020</div>
+                        <div class="col-12 first-line">Learn how you can give us money by calling (209) 322-7...</div>
+                    </div>
                 </div>
-                <div class="col-12 col-md email-detail">
-                    <p>Email Header</p>
-                    <p>Email Subject</p>
-                    <p>Email</p>
+
+                
+                <!-- Column 3: Email Detail and Reply -->
+                <div class="col-12 col-lg email-detail order-lg-3 order-2">
+                    <div class="row email-detail-header">
+                        <div class="col-12">To: taylor@lamarsoftware.io</div>
+                        <div class="col-12">From: re-reply@theofficenbc.com</div>
+                    </div>
+                    
+                    <div class="row email-detail-subject">
+                        <div class="col subject">Michael Scott Daily Quotes</div>
+                        <div class="col icons"><span> icons here </span></div>
+                    </div>
+
+                    <div class="row email-detail-body">
+                        <div class="col-12 icons">
+                            <p>"Friends joke with one another. 'Hey you're poor.' 'Hey, your momma's dead.' That's what friends do."</p>
+                            <p>"It's a good thing Russia doesn't exist anymore."</p>
+                            <p>"You cheated on me?  When I specifically asked you not to?"</p>
+                            <p>"It just seems awfully mean.  But sometimes, the ends justify the mean."</p>
+                            <p>"Reverse psychology is an awesome tool.  I don't know if you guys know about it, but, basically, you make 
+                                someone think the opposite of what you believe, and that tricks them into doing something stupid.  Works 
+                                like a charm."
+                            </p>
+                        </div>
+                    </div>
                     <p>Reply Box</p>
                 </div>
             </div>
           </div>
     </body>
 </html>
+<!-- still need: icon in nav, icon in search bar, icons in email-detail, hover in email-card, reply box in email-detail -->
