@@ -3,13 +3,17 @@
     flex-wrap: wrap;
 } */
 
-.col {
+.col-12 {
     padding-top: 30px;
 }
 
 a {
     color: white;
 } 
+
+/* .email-list {
+    order: 100;
+} */
 
 .navbar {
     background-color: #423E37;
