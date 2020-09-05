@@ -2,18 +2,29 @@
     padding-top: 30px;
 }
 
-a {
-    color: white;
-} 
-
-.navbar {
-    align-items: flex-start;
+/* overwriting these does nothing :( */
+.navbar-dark, .bg-dark {
     background-color: #423E37;
     color: white;
+}
+
+/* I can overwrite the toggler button colors, but only if I use navbar-dark and bg-dark */
+.navbar, .navbar-toggler {
+    align-items: flex-start;    
+    background-color: #423E37;
+    color: white;   
+    
+}
+
+/* #collapse-nav {
     flex-direction: column;
     padding-left: 30px;    
     padding-right: 30px;
-}
+} */
+
+a {
+    color: white;
+} 
 
 ul {
     flex-direction: column;
