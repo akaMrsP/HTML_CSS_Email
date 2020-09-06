@@ -1,56 +1,103 @@
-.navbar, .email-list, .email-detail {
-    padding-top: 30px;
-}
+/* navbar styling */
 
-/* overwriting these does nothing :( */
-.navbar-dark, .bg-dark {
+.navbar {
+    align-items: flex-start;
     background-color: #423E37;
-    color: white;
+    color: white; 
+    padding-left: 30px;
 }
 
-/* I can overwrite the toggler button colors, but only if I use navbar-dark and bg-dark */
-.navbar, .navbar-toggler {
-    align-items: flex-start;    
-    background-color: #423E37;
-    color: white;   
-    
+.navbar-brand {
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    position: absolute;
+    width: 30px;
 }
 
-/* #collapse-nav {
-    flex-direction: column;
-    padding-left: 30px;    
-    padding-right: 30px;
-} */
-
-a {
-    color: white;
-} 
-
-ul {
-    flex-direction: column;
+.welcome {
+    margin: 30px 45px;
 }
 
-.active {
-    font-weight: bold;
-}
-
-.btn {
+.btn-compose {
     background-color: #E3B23C;
     color: white;
     font-weight: bold;
-    margin: 15px 10px;
+    margin-bottom: 30px;
+    padding: 10px 25px;
+}
+
+.unread {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+ul {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* email list styling */
+
+.fa {
+    color: lightgray;
+    padding: 5px;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+.search-bar {
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    height: 30px;
+    margin-top: 15px;
+    padding-top: 0;
+    width: 90%;
+}
+
+.search-input {
+    border: none;
+    border-radius: 4px;
+    flex: 1;
+    outline: none;
 }
 
 .email-list {
     background-color: #F4F3EF;
-    padding: 10px;    
+    padding-left: 30px;
+    padding-top: 30px;    
 }
 
 .email-card {
     color: gray;
     justify-content: space-between;
+    margin-left: 5px;
     margin-top: 30px;
+    padding: 15px 30px 15px 20px;
     width: 90%;
+}
+
+.email-card:hover {
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px #929090;
 }
 
 .subject {
@@ -63,13 +110,11 @@ ul {
     overflow: ellipsis;
 }
 
-input {
-    margin-top: 30px;
-    width: 90%;
-}
+/* email detail styling */
 
 .email-detail {
     color: gray;
+    padding: 40px 40px;
 }
 
 .email-detail-header {
@@ -80,4 +125,46 @@ input {
 .email-detail-subject {
     font-size: 1.5em;
     margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    font-size: .75em;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.email-detail-body {
+    margin-right: 50px;
+}
+
+.reply-box {
+    border: solid 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-reply {
+    background-color: white;
+    border: solid 2px #E3B23C;
+    color: #E3B23C;
+    font-size: .75em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px 25px;
+}
+
+.reply-text {
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+}
+
+/* cascading styling */
+
+.fa-envelope {
+    color: black;
+    position: relative;
 }
